@@ -1,0 +1,184 @@
+body {
+    background-color: teal;
+    font-size: large;
+    font-family: "Anonymous Pro", serif;
+}
+
+h1 {
+    font-family: "Anonymous Pro", serif;
+    font-weight: 800;
+    font-size: larger;
+    font-style: normal;
+    text-align: center;
+    margin: 2%;
+}
+
+h3 {
+    font-family: "Anonymous Pro", serif;
+    color: red;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    padding: 2vh;
+    background-color: white;
+}
+
+h2 {
+    text-align: right;
+}
+
+p {
+    font-family: "Anonymous Pro", serif;
+    background-color: white;
+    padding: 2%;
+}
+
+header {
+    display: flex;
+    align-items: stretch;
+}
+
+.logo {
+    display: flex;
+    height: 20vh;
+    width: auto;
+    justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    height: 20vh;
+    flex: 1;
+    align-items: flex-end;
+    background-image: url("../img/header-bg.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    justify-content: space-around;
+}
+
+.menu-button {
+    display: flex;
+    text-align: center;
+    font-size: 3vh;
+    font-family: "Encode Sans Semi Expanded", serif;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: underline;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: white;
+}
+
+.banner {
+    height: 10vh;
+    background-color: yellow;
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.content {
+    width: 80vw;
+    flex-grow: 6;
+    background-color: yellow;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(5, 1fr);
+}
+
+.product-content {
+    grid-area: 1/1/4/4;
+    flex-direction: column;
+    border: solid 5px;
+    border-color: red;
+}
+
+.card {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.product-img {
+    display: flex;
+    width: 50%;
+    padding: 2% 1% 2% 1%;
+    background-image: url("../img/frame_gold_Tim.gif");
+    background-size: 100% 100%;
+}
+
+.descr {
+    display: flex;
+    width: 50%;
+    background-color: yellow;
+    flex-direction: column;
+}
+
+ol {
+    padding: 2%;
+    width: 100%;
+}
+
+li {
+    padding: 2%;
+}
+
+.cool {
+    background-color: red;
+    color: white;
+    font-size: large;
+}
+
+.comments-content {
+    grid-area: 1/4/3/6;
+    border: solid 5px;
+    border-color: red;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    display: flex;
+    margin: 1vh 1vw 1vh 1vh;
+    padding: 1%;
+    flex-direction: column;
+    background-color: silver;
+    box-shadow: 4px -2px gray;
+}
+
+.also-try {
+    grid-area: 3/4/4/6;
+    background-color: yellow;
+    border: solid 5px;
+    border-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    background-color: blue;
+    justify-content: space-around;
+}
+
+.vertical-banner{
+    width: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
