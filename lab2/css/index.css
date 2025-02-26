@@ -191,6 +191,99 @@ footer {
     flex-grow: 1;
 }
 
+@media (max-width:426px){
+    body {
+        font-size: 12px;
+    }
+
+    main {
+        height: 800px;
+    }
+
+    .content {
+        height: 100%;
+        grid-template: repeat(6, 1fr) / repeat(10, 1fr);
+    }
+
+    .product-content {
+        grid-area: 1/1/8/8;
+    }
+
+    .comments-content {
+        grid-area: 1/8/6/11;
+    }
+
+    .also-try {
+        grid-area: 6/8/7/11;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    nav {
+        height: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+    }
+
+    .menu-button {
+        font-size: 12px;
+        padding: 0.5em;
+        margin-bottom: 0px;
+    }
+
+    .banner {
+        height: 50px;
+    }
+
+    .vertical-banner {
+        display: none;
+    }
+
+    .vert-banner-img {
+        display: none;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .product-img {
+        width: 100%;
+    }
+
+    .descr {
+        width: 100%;
+    }
+
+    li {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    ol {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .comment {
+        margin: 4px;
+    }
+
+}
+
+
+
 @media (max-width:320px){
     body {
         font-size: 10px;
@@ -233,7 +326,6 @@ footer {
         height: 75px;
         flex-wrap: wrap;
         justify-content: center;
-        align-items:end;
         align-content: flex-end;
     }
 
