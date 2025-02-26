@@ -1,13 +1,13 @@
 body {
     background-color: teal;
-    font-size: large;
+    font-size: 1.25vw;
     font-family: "Anonymous Pro", serif;
 }
 
 h1 {
     font-family: "Anonymous Pro", serif;
     font-weight: 800;
-    font-size: larger;
+    font-size: 1.5vw;
     font-style: normal;
     text-align: center;
     margin: 2%;
@@ -17,18 +17,20 @@ h3 {
     font-family: "Anonymous Pro", serif;
     color: red;
     font-weight: 800;
-    font-size: larger;
+    font-size: 1.5vw;
     text-align: center;
-    padding: 2vh;
+    padding: 2%;
     background-color: white;
 }
 
 h2 {
     text-align: right;
+    font-size: 1vw;
 }
 
 p {
     font-family: "Anonymous Pro", serif;
+    font-size: 1vw;
     background-color: white;
     padding: 2%;
 }
@@ -40,14 +42,14 @@ header {
 
 .logo {
     display: flex;
-    height: 20vh;
+    height: 10vw;
     width: auto;
     justify-content: flex-start;
 }
 
 nav {
     display: flex;
-    height: 20vh;
+    height: 10vw;
     flex: 1;
     align-items: flex-end;
     background-image: url("../img/header-bg.png");
@@ -59,7 +61,7 @@ nav {
 .menu-button {
     display: flex;
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.5vw;
     font-family: "Encode Sans Semi Expanded", serif;
     font-weight: 800;
     font-style: normal;
@@ -70,7 +72,7 @@ nav {
 }
 
 .banner {
-    height: 10vh;
+    height: 5vw;
     background-color: yellow;
     display: flex;
     direction: row;
@@ -79,7 +81,16 @@ nav {
 }
 
 .banner-img {
-    width: 100%;
+    width: 25vw;
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+}
+
+.vert-banner-img {
+    width: 15vw;
+    display: flex;
+    flex-grow: 1;
     height: auto;
 }
 
@@ -90,7 +101,7 @@ main {
 }
 
 .content {
-    width: 80vw;
+    width: 70vw;
     flex-grow: 6;
     background-color: yellow;
     display: grid;
@@ -100,7 +111,7 @@ main {
 .product-content {
     grid-area: 1/1/4/4;
     flex-direction: column;
-    border: solid 5px;
+    border: solid 0.25vw;
     border-color: red;
 }
 
@@ -138,12 +149,12 @@ li {
 .cool {
     background-color: red;
     color: white;
-    font-size: large;
+    font-size: 1.5vw;
 }
 
 .comments-content {
     grid-area: 1/4/3/6;
-    border: solid 5px;
+    border: solid 0.25vw;
     border-color: red;
     background-color: yellow;
     display: flex;
@@ -162,7 +173,7 @@ li {
 .also-try {
     grid-area: 3/4/4/6;
     background-color: yellow;
-    border: solid 5px;
+    border: solid 0.25vw;
     border-color: red;
     display: flex;
     flex-direction: column;
@@ -170,7 +181,7 @@ li {
 }
 
 footer {
-    height: 10vh;
+    height: 5vw;
     display: flex;
     background-color: blue;
     justify-content: space-around;
