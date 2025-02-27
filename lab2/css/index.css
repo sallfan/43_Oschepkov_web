@@ -1,3 +1,5 @@
+/* ТЕКСТ */
+
 body {
     background-color: teal;
     font-size: 16px;
@@ -32,6 +34,8 @@ p {
     background-color: white;
     padding: 2px;
 }
+
+/* ШАПКА */
 
 header {
     display: flex;
@@ -69,6 +73,8 @@ nav {
     background-color: white;
 }
 
+/* ВСЯ РЕКЛАМА */
+
 .banner {
     height: 50px;
     background-color: yellow;
@@ -84,12 +90,28 @@ nav {
     flex-grow: 1;
 }
 
+.vertical-banner{
+    width: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
 .vert-banner-img {
     width: 15vw;
     display: flex;
     flex-grow: 1;
     height: auto;
 }
+
+
+footer {
+    height: 50px;
+    display: flex;
+    background-color: blue;
+}
+
+/* ОСНОВНАЯ ЧАСТЬ */
 
 main {
     display: flex;
@@ -141,6 +163,7 @@ main {
 ol {
     padding: 10px;
     width: 100%;
+    text-align: center;
 }
 
 li {
@@ -151,6 +174,8 @@ li {
     background-color: red;
     color: white;
 }
+
+/* ОТЗЫВЫ */
 
 .comments-content {
     grid-area: 1/4/3/5;
@@ -170,6 +195,8 @@ li {
     box-shadow: 4px -2px gray;
 }
 
+/* ФИКС ПРАЙС */
+
 .also-try {
     grid-area: 3/4/4/5;
     background-color: yellow;
@@ -180,18 +207,7 @@ li {
     align-items: stretch;
 }
 
-footer {
-    height: 50px;
-    display: flex;
-    background-color: blue;
-}
-
-.vertical-banner{
-    width: 15vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-}
+/* Lapyop L */
 
 @media (max-width:1025px){
     body {
@@ -214,6 +230,8 @@ footer {
         width: 10vw;
     }
 }
+
+/* Tablet */
 
 @media (max-width:769px){
     body {
@@ -288,10 +306,11 @@ footer {
 
 }
 
+/* Smartphone L */
 
 @media (max-width:426px){
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     main {
@@ -300,6 +319,7 @@ footer {
 
     .content {
         height: 100%;
+        width: 100%;
         grid-template: repeat(6, 1fr) / repeat(10, 1fr);
     }
 
@@ -366,20 +386,24 @@ footer {
     }
 
     li {
-        margin: 5px;
-        padding: 5px;
+        margin: 2px;
+        padding: 2px;
     }
 
     ol {
         margin: 0px;
         padding: 0px;
+        text-align: left;
     }
 
     .comment {
-        margin: 4px;
+        margin: 2px;
+        box-shadow: none;
     }
 
 }
+
+/* Smartphone M */
 
 @media (max-width:376px){
     body {
@@ -388,6 +412,7 @@ footer {
 
     .content {
         height: 100%;
+        width: 100%;
         grid-template: repeat(6, 1fr) / repeat(10, 1fr);
     }
 
@@ -470,6 +495,8 @@ footer {
     }
 
 }
+
+/* Smartphone S */
 
 @media (max-width:320px){
     body {
