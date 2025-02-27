@@ -1,13 +1,13 @@
 body {
     background-color: teal;
-    font-size: 12px;
+    font-size: 16px;
     font-family: "Anonymous Pro", serif;
 }
 
 h1 {
     font-family: "Anonymous Pro", serif;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     text-align: center;
     margin: 2px;
@@ -17,7 +17,7 @@ h3 {
     font-family: "Anonymous Pro", serif;
     color: red;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     padding: 2px;
     background-color: white;
@@ -95,20 +95,18 @@ main {
     display: flex;
     align-items: stretch;
     flex-direction: row;
-    height: 620px;
 }
 
 .content {
-    height: 620px;
     width: 70vw;
     flex-grow: 6;
     background-color: yellow;
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(10, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
 }
 
 .product-content {
-    grid-area: 1/1/8/8;
+    grid-area: 1/1/4/4;
     flex-direction: column;
     border: solid 2px;
     border-color: red;
@@ -132,8 +130,11 @@ main {
 
 .descr {
     display: flex;
+    height: 100%;
     width: 50%;
-    background-color: yellow;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
     flex-direction: column;
 }
 
@@ -149,11 +150,10 @@ li {
 .cool {
     background-color: red;
     color: white;
-    font-size: 12px;
 }
 
 .comments-content {
-    grid-area: 1/8/6/11;
+    grid-area: 1/4/3/5;
     border: solid 2px;
     border-color: red;
     background-color: yellow;
@@ -171,7 +171,7 @@ li {
 }
 
 .also-try {
-    grid-area: 6/8/7/11;
+    grid-area: 3/4/4/5;
     background-color: yellow;
     border: solid 2px;
     border-color: red;
@@ -193,13 +193,31 @@ footer {
     flex-grow: 1;
 }
 
+@media (max-width:1025px){
+    body {
+        font-size: 16px;
+    }
+
+    .descr {
+        font-size: 18px;
+    }
+
+    .content {
+        width: 80vw;
+    }
+
+    .vertical-banner {
+        width: 10vw;
+    }
+
+    .vert-banner-img {
+        width: 10vw;
+    }
+}
+
 @media (max-width:769px){
     body {
         font-size: 12px;
-    }
-
-    main {
-        height: 650px;
     }
 
     .content {
@@ -236,6 +254,12 @@ footer {
         flex-wrap: wrap;
         justify-content: space-around;
         align-content: flex-end;
+    }
+
+    .descr {
+        margin: 2px;
+        padding: 2px;
+        font-size: 14px;
     }
 
     .menu-button {
@@ -338,6 +362,7 @@ footer {
 
     .descr {
         width: 100%;
+        font-size: 14px;
     }
 
     li {
@@ -359,10 +384,6 @@ footer {
 @media (max-width:376px){
     body {
         font-size: 11px;
-    }
-
-    main {
-        height: 800px;
     }
 
     .content {
@@ -428,11 +449,14 @@ footer {
     }
 
     .descr {
+        margin: 2px;
+        padding: 2px;
         width: 100%;
+        font-size: 12px;
     }
 
     li {
-        margin: 5px;
+        margin: 2px;
         padding: 5px;
     }
 
@@ -450,10 +474,6 @@ footer {
 @media (max-width:320px){
     body {
         font-size: 10px;
-    }
-
-    main {
-        height: 720px;
     }
 
     .content {
@@ -519,7 +539,10 @@ footer {
     }
 
     .descr {
+        margin: 0px;
+        padding: 2px;
         width: 100%;
+        font-size: 12px;
     }
 
     li {
