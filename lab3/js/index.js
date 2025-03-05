@@ -33,9 +33,9 @@ function countMines() {
             for (let i = -1; i < 2; i++) {
                 for (let j = -1; j < 2; j++) {
 
-                    let check_r = row + i;
-                    let check_c = col + j;
-                    if (check_r >= 0 && check_r < SIZE && check_c >= 0 && check_c < SIZE && field[check_r][check_c] == "MINE") {
+                    let checkRow = row + i;
+                    let checkCol = col + j;
+                    if (checkRow >= 0 && checkRow < SIZE && checkCol >= 0 && checkCol < SIZE && field[checkRow][checkCol] == "MINE") {
                         count++;
                     }
 
