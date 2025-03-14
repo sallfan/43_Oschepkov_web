@@ -9,6 +9,13 @@ if (comments.length === 0){
 }
 ShowComments(comments);
 
+/**
+ * Конструктор объекта Comment
+ * @param {string} text - Текст отзыва. 
+ * @param {string} name - Имя пользователя.
+ * @param {string} date - Дата отправки отзыва.
+ * @param {Number} rating - Оценка пользователя.
+ */
 export function Comment(text, name, date, rating){
     this.text = text;
     this.name = name;
@@ -17,10 +24,19 @@ export function Comment(text, name, date, rating){
     this.id = comments.length
 }
 
+/**
+ * Переводит цифровой формат оценки в строку из звёзд ☆ и ★.
+ * @param {Number} rating - Оценка пользователя.
+ * @returns {string} - Оценка в формате строки из звёзд.
+ */
 function numToStars(rating){
     return "★".repeat(rating) + "☆".repeat(5-rating);
 }
 
+/**
+ * Возвращает строку с сегодняшней датой.
+ * @returns {string} - Строка с датой в формате ГГГГ-ММ-ДД.
+ */
 function today(){
     const today = new Date();
     const year = today.getFullYear();
@@ -30,6 +46,11 @@ function today(){
     return `${year}-${month}-${day}`;
 }
 
+/**
+ * Возращает отзыв в виде HTML
+ * @param {Comment} comment - Отзыв.
+ * @returns {string} - Строка с HTML кодом.
+ */
 function CommentHTML(comment){
     return (
         `<div class="comment">
@@ -43,22 +64,38 @@ function CommentHTML(comment){
     );
 }
 
+/**
+ * Отображает отзыв на странице сайта.
+ * @param {Comment} comment - Отзыв.
+ */
 function showComment(comment){
     document.getElementById("commentsContainer").innerHTML += CommentHTML(comment);
 }
 
+/**
+ * Отображает массив отзывов на странице сайта.
+ * @param {Array<Comment>} comments - Массив отзывов.
+ */
 function ShowComments(comments){
     comments.forEach(comment => {
         showComment(comment);
     });
 }
 
+/**
+ * Добавляет отзыв на страницу сайта и сохраняет в cookie.
+ * @param {Comment} comment - Отзыв. 
+ */
 function addComment(comment){
     comments.push(comment);
     showComment(comment);
     cookieSaveComments(comments);
 }
 
+/**
+ * Считывает данные с формы и создаёт новый отзыв.
+ * @returns {Comment} - Отзыв.
+ */
 function getCommentFromForm(){
     let userName = document.getElementById('inputUsername').value;
     let date = today();
@@ -75,6 +112,9 @@ function getCommentFromForm(){
     return new Comment(text, userName, date, rating);
 }
 
+/**
+ * Очищает поля формы.
+ */
 function clearForm(){
     document.getElementById('inputUsername').value = "";
     document.getElementById('inputComment').value = "";
@@ -84,6 +124,9 @@ function clearForm(){
     });
 }
 
+/**
+ * Сохранение и отправка отзыва.
+ */
 function sendComment(){
     let comment = getCommentFromForm();
     if (comment.name === "" || comment.text === ""){
