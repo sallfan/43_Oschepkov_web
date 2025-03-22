@@ -35,10 +35,10 @@ export class TextBlock extends Block {
             return `<div class="env">
                         <div class="block-tools">
                             <button name="deleteBlock" class="tool-button">
-                                <img src="../img/delete-icon.svg" alt="Удалить" class="icon">
+                                <img src="../../lab5/img/delete-icon.svg" alt="Удалить" class="icon">
                             </button>
                             <button name="saveBlock" class="tool-button">
-                                <img src="../img/save-icon.png" alt="Сохранить" class="icon">
+                                <img src="../../lab5/img/save-icon.png" alt="Сохранить" class="icon">
                             </button>
                         </div>
                         <div class="block" id="${this._id}">
@@ -73,10 +73,10 @@ export class OrderedListBlock extends Block {
                 return `<div class="env">
                             <div class="block-tools">
                                 <button name="deleteBlock" class="tool-button">
-                                    <img src="../img/delete-icon.svg" alt="Удалить" class="icon">
+                                    <img src="../../lab5/img/delete-icon.svg" alt="Удалить" class="icon">
                                 </button>
                                 <button name="saveBlock" class="tool-button">
-                                    <img src="../img/save-icon.png" alt="Сохранить" class="icon">
+                                    <img src="../../lab5/img/save-icon.png" alt="Сохранить" class="icon">
                                 </button>
                             </div>
                             <div class="block" id="${this._id}">
@@ -110,13 +110,13 @@ export class PictureBlock extends Block {
             return `<div class="env">
                         <div class="block-tools">
                             <button name="deleteBlock" class="tool-button">
-                                <img src="../img/delete-icon.svg" alt="Удалить" class="icon">
+                                <img src="../../lab5/img/delete-icon.svg" alt="Удалить" class="icon">
                             </button>
                             <button name="uploadImage" class="tool-button">
-                                <img src="../img/pic-icon.png" alt="Сохранить" class="icon">
+                                <img src="../../lab5/img/pic-icon.png" alt="Сохранить" class="icon">
                             </button>
                             <button name="saveBlock" class="tool-button">
-                                <img src="../img/save-icon.png" alt="Сохранить" class="icon">
+                                <img src="../../lab5/img/save-icon.png" alt="Сохранить" class="icon">
                             </button>
                         </div>
                         <div class="twopart-block" id="${this._id}">
