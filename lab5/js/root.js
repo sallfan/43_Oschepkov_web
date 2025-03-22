@@ -53,7 +53,7 @@ class Root{
                                             <option value="PictureBlock">Картинка</option>
                                         </select>
                                         <button id="add-block-button">
-                                            <img src="../../lab5/img/add-icon.svg" alt="Добавить" class="big-icon">
+                                            <img src="../img/add-icon.svg" alt="Добавить" class="big-icon">
                                         </button>
                                     </div>` : ""}`;
     }
