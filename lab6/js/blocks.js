@@ -14,6 +14,18 @@ export class Block {
     };
 }
 
+export class PlaceholderBlock extends Block {
+    constructor (){
+        super();
+    }
+
+    getHTML = () => {
+        return `<div class="placeholder-block">
+                    <img src="./img/loading.gif">
+                </div>`
+    }
+}
+
 export class TextBlock extends Block {
     /**
      * Создаёт блок текста.
@@ -56,7 +68,7 @@ export class TextBlock extends Block {
 
 export class OrderedListBlock extends Block {
 
-    constructor (header="Заголовок", items=["Элемент №1", "Элемент №3", "Элемент №4"]){
+    constructor (header="Заголовок", items=["Элемент №1", "Элемент №2", "Элемент №3"]){
         super(header);
         this.items = items;
         this.type = "OrderedListBlock";
@@ -93,7 +105,7 @@ export class OrderedListBlock extends Block {
 }
 
 export class PictureBlock extends Block {
-    constructor(header = "Заголовок", text = "Текст", imageUrl = "../img/default.jpeg") {
+    constructor(header = "Заголовок", text = "Текст", imageUrl = "./img/default.jpeg") {
         super(header);
         this.text = text;
         this.imageUrl = imageUrl;

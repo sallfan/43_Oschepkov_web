@@ -1,5 +1,5 @@
-import { root } from "./js/root.js";
-import { TextBlock, OrderedListBlock, PictureBlock} from "./js/blocks.js";
+import { root } from "./root.js";
+import { TextBlock, OrderedListBlock, PictureBlock} from "./blocks.js";
 
 let editMode = false;
 

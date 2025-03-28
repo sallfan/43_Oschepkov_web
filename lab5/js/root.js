@@ -1,4 +1,4 @@
-import { OrderedListBlock, PictureBlock, TextBlock } from "./js/blocks.js";
+import { OrderedListBlock, PictureBlock, TextBlock } from "./blocks.js";
 
 class Root{
 
