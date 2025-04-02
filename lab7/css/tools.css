@@ -1,0 +1,55 @@
+.creation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    background-color: #0e8cda;
+    border-radius: 15px;
+    color: white;
+    margin: 5px 10px 0px 10px;
+    padding: 5px;
+}
+
+#add-block-button {
+    order: 3;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+.tool-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.big-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    filter: invert(100%) brightness(100000%);
+
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    filter: invert(100%) brightness(100000%);
+}
+
+.block-tools {
+    display: flex;
+    flex-direction: row;
+    background-color: #0e8cda;
+    padding: 5px;
+    justify-self: left;
+    margin: 10px;
+    margin-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
